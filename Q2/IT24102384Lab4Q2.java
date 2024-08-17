@@ -28,7 +28,7 @@ public class IT24102384Lab4Q2 {
 		int Labpercentage = scanner.nextInt();
 		
 		if (Exampercentage + Labpercentage == 100) {
-		double Finalmarks = (Exammarks  + Labmarks) / 2;
+		double Finalmarks = (Exammarks * Exampercentage/100 + Labmarks * Labpercentage/100);
 		System.out.println("Final Exam Marks is: " + Finalmarks);
 		} else {
 		System.out.print("The percentage must add up to 100. Terminating program");
